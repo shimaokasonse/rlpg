@@ -1,6 +1,5 @@
 import tensorflow as tf
 import numpy as np
-from collections import deque
 import random
 
 class PolicyNet:
@@ -82,5 +81,11 @@ class PolicyNet:
     def bias_variable(self,shape):
         initial= tf.constant(0.0, shape = shape)
         return tf.Variable(initial)
+
+    def save(self,file_name):
+        pass
+
+    def load(self,file_name):
+        pass
 
 
