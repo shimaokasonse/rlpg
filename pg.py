@@ -62,8 +62,6 @@ class PolicyNet:
     def getValue(self,state):
         return self.v.eval(feed_dict={self.stateInput:[state]})[0]
     
-    def getActionMax(self,state):
-        pass
     
     def trainNetworkV(self,state_batch,return_batch):        
         self.trainStepV.run(feed_dict={self.stateInput:state_batch,
