@@ -9,5 +9,4 @@ This is a tensorflow implementation of a policy gradient algorithm for CartPole-
 ## Training
 		$ python main.py
 		
-## Visualizing
-		$ python vis.py
+
